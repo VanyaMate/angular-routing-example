@@ -4,7 +4,6 @@ import {
     ProductPageModule,
 } from '@/app/pages/product-page/product-page.module';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
