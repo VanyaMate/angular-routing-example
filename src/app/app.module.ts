@@ -1,18 +1,23 @@
+import { AppRoutingModule } from '@/app/app-routing.module';
+import { ContentModule } from '@/app/containers/content/content.module';
+import { HeaderComponent } from '@/app/containers/header/header.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+    ],
+    imports     : [
+        BrowserModule,
+        ContentModule,
+        AppRoutingModule,
+    ],
+    providers   : [],
+    bootstrap   : [ AppComponent ],
 })
-export class AppModule { }
+export class AppModule {
+}
